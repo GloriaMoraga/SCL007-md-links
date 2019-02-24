@@ -10,20 +10,35 @@ const fs = require('fs');
 let regExp =  /\(https?:(.+)\)/g;
 
 
-fs.readdir(testFolder, (err, files) => {
-  files.forEach(file => {
-    console.log(file);
-  });
-});
+// fs.readdir(testFolder, (err, files) => {
+//   files.forEach(file => {
+//     console.log(file);
+//   });
+// });
 
 
-fs.readFile('./README.md','utf-8', function(err,data) {
-  if (err){
-    console.log(err);
-  }
-  console.log(data.toString().match(regExp));
+const getData = (fileName, type) =>
+  new Promise((resolve, reject) =>
+    fs.readFile(fileName, type, (err, data) => {
+      //if has error reject, otherwise resolve
+      return err ? reject(err) : resolve(data);
+    })
+  );
+
+getData('./README.md', 'utf8')
+  .then(data => console.log('Data: ', data.toString().match(regExp)))
+  .catch(error => console.log('Error: ', error));
+
+
+
+
+// fs.readFile('./README.md','utf-8', function(err,data) {
+//   if (err){
+//     console.log(err);
+//   }
+//   console.log(data.toString().match(regExp));
   
-  })
+//   })
 
 
 
