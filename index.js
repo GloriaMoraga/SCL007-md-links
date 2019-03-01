@@ -7,6 +7,7 @@ let options = {
   stats: false
 }   
 if (require.main === module) {
+  
   mdLinks(fileUser, options).then( (response) =>{
   let arrValidate = [];
   
