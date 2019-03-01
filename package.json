@@ -1,7 +1,7 @@
 {
   "name": "md-links",
   "version": "0.1.0",
-  "description": "## Preámbulo",
+  "description": "Modulo que encuentra los links en archivos Markdown",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -25,6 +25,9 @@
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
     "jest": "^24.1.0"
   }
 }
