@@ -5,7 +5,7 @@ const path = require('path');
 const colors = require('colors');
 
 //------------------------ Funcion que retorna los links
-const mdLinks = (fileName) => new Promise((resolve, err) => {
+const mdLink = (fileName) => new Promise((resolve, err) => {
           
             let urlToAbsolute = path.resolve(fileName);
             let extFile = path.extname(urlToAbsolute);
@@ -34,5 +34,5 @@ const mdLinks = (fileName) => new Promise((resolve, err) => {
 });
 
 
-module.exports = mdLinks;
+module.exports = mdLink;
 

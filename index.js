@@ -6,7 +6,7 @@ let options = {
   validate: false,
   stats: false
 }   
-if (require.main === module) {
+
 
   mdLinks(fileUser, options).then( (response) =>{
   let arrValidate = [];
@@ -51,6 +51,5 @@ if (require.main === module) {
   }
   
 });
-}
 
-module.exports.mdlinks = mdLinks;
+module.exports = mdLinks;
