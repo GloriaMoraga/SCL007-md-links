@@ -13,7 +13,7 @@ describe('mdLinks', () => {
 
 describe('index', () => {
 
-  it('Debería ser un objeto', () => {
+  it('Debería ser una funcion', () => {
     expect(typeof index).toBe('function');
   });
 
