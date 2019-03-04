@@ -21,6 +21,7 @@ En la carpeta de tu proyecto debes instalar el siguiente modulo.
 ## - Guía de uso
 Para buscar los links en un archivo .md
 
+
  ```
  node <archivo-proyecto.js> <archivo-para-Analizar.md> 
  ```
@@ -47,10 +48,12 @@ Para mostrar el total del los links en el archivo .md
  node <archivo-proyecto.js> <archivo-para-Analizar.md>  --stats
  ```
 Ejemplo:
-![Gráfico stat](img/stat.png)
+ 
+ ![Gráfico stat](img/stat.png)
 
 ### - Planificación
-Para la planificación se utilizo issues y milestones para revisarla puede hacer click en el siguiente link:.
+ Para la planificación se utilizo issues y milestones, revisar en el siguiente link:
+
 [MdLinks Markdown Planificación](https://github.com/GloriaMoraga/SCL007-md-links/projects/1)
 
 
